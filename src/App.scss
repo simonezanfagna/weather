@@ -4,22 +4,22 @@
   position: absolute;
   .container {
     margin: auto;
-    height: 100%;
-    min-height: 140px;
+    padding: 40px 0;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow-y: auto;
-    &.minHeight {
-      min-height: 290px;
-    }
+    /* &.minHeight {
+      min-height: fit-content;
+    } */
     .containerNav {
       display: flex;
       width: fit-content;
       height: fit-content;
       align-items: center;
+      margin: 20px 0;
     }
   }
 }

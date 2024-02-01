@@ -23,6 +23,10 @@ body {
   h4,
   h5 {
     font-family: var(--headingFont);
+    color: #4682a9;
+  }
+  p {
+    color: #4682a9;
   }
   ::placeholder {
     font-family: inherit;
@@ -32,5 +36,7 @@ body {
     border: none;
     background: unset;
     cursor: pointer;
+    font-family: var(--bodyFont);
+    color: #4682a9;
   }
 }

@@ -2,10 +2,14 @@ import { useSelector } from "react-redux";
 import "./App.scss";
 import ContainerWeather from "./components/ContainerWeather/ContainerWeather";
 import Search from "./components/Search/Search";
-import FavoriteCity from "./components/FavoriteCity/FavoriteCity";
+import FavoriteCityButton from "./components/FavoriteCityButton/FavoriteCityButton";
+import FavoriteCityContainer from "./components/FavoriteCityContainer/FavoriteCityContainer";
+import Error from "./components/Error/Error";
 
 function App() {
-  const { isLoading, city } = useSelector((store) => store.weather);
+  const { isLoading, city, favoriteBox, error } = useSelector(
+    (store) => store.weather
+  );
   return (
     <div className="app">
       <div
@@ -15,9 +19,14 @@ function App() {
       >
         <div className="containerNav">
           <Search />
-          <FavoriteCity />
+          <FavoriteCityButton />
         </div>
-        {!isLoading && city.name !== undefined && <ContainerWeather />}
+        {!isLoading &&
+          city.name !== undefined &&
+          !favoriteBox &&
+          error.length === 0 && <ContainerWeather />}
+        {favoriteBox && <FavoriteCityContainer />}
+        {error.length > 0 && <Error />}
       </div>
     </div>
   );

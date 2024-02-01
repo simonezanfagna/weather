@@ -1,0 +1,44 @@
+.containerFC {
+  height: 175px;
+  width: 300px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0 15px -3px,
+    rgba(0, 0, 0, 0.25) 0px 0 6px -2px;
+  border-radius: 20px;
+  background-color: #f7fbfc;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  .itemFavorite {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    i {
+      font-size: 15px;
+      color: #4682a9;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    button {
+      flex-shrink: 0;
+      padding: unset;
+      margin-right: 20px;
+      font-size: 18px;
+      width: calc(100% - 35px);
+      height: 23px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: left;
+    }
+  }
+}

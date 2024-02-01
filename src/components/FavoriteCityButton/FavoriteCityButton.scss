@@ -10,8 +10,25 @@
   background-color: #f7fbfc !important;
   flex-shrink: 0;
   margin-left: 20px;
+  transition: 0.3s ease-in-out all;
+  &.activeBtn {
+    background-color: #4682a9 !important;
+    i {
+      color: white;
+    }
+  }
   i {
     font-size: 20px;
     margin-top: 1px;
+    color: #4682a9;
+  }
+}
+
+@media (hover: hover) {
+  .btnFC:hover {
+    background-color: #4682a9 !important;
+    i {
+      color: white;
+    }
   }
 }
