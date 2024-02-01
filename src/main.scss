@@ -1,0 +1,36 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap");
+
+:root {
+  --headingFont: "Roboto Condensed", Sans-Serif;
+  --bodyFont: "Cabin", Sans-Serif;
+}
+
+body {
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  background-color: #d6e6f2;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--headingFont);
+  }
+  ::placeholder {
+    font-family: inherit;
+    font-size: 17px;
+  }
+  .btn {
+    border: none;
+    background: unset;
+    cursor: pointer;
+  }
+}

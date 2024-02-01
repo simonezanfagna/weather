@@ -1,0 +1,33 @@
+.containerSearch {
+  height: 50px;
+  width: 230px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0 15px -3px,
+    rgba(0, 0, 0, 0.25) 0px 0 6px -2px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f7fbfc;
+  flex-shrink: 0;
+  margin: 20px 0;
+  label {
+    width: 100%;
+    padding: 10px 15px;
+    height: 100%;
+    input {
+      height: 100%;
+      width: calc(100% - 30px);
+      border: none;
+      background: unset;
+      outline: unset;
+      font-size: 17px;
+      font-family: var(--bodyFont);
+    }
+    button {
+      height: 100%;
+      width: 30px;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
