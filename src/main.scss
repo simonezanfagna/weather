@@ -40,3 +40,16 @@ body {
     color: #4682a9;
   }
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4682a9;
+  border-radius: 20px;
+}

@@ -12,29 +12,31 @@ export default function FavoriteCityContainer() {
   const dispatch = useDispatch();
 
   return (
-    <div className="containerFC">
-      {favoriteCity?.length > 0 ? (
-        favoriteCity.map((city, key) => {
-          return (
-            <div key={key} className="itemFavorite">
-              <button
-                className="btn"
-                onClick={() => {
-                  dispatch(fetchData(city)), dispatch(handleFavoriteBox());
-                }}
-              >
-                {city}
-              </button>
-              <i
-                className="fa-solid fa-trash"
-                onClick={() => dispatch(removeFavorite(city))}
-              ></i>
-            </div>
-          );
-        })
-      ) : (
-        <p>La tua lista preferiti è vuota</p>
-      )}
+    <div className="containerFavoriteCity">
+      <div className="scrollFavoriteCity">
+        {favoriteCity?.length > 0 ? (
+          favoriteCity.map((city, key) => {
+            return (
+              <div key={key} className="itemFavorite">
+                <button
+                  className="btn"
+                  onClick={() => {
+                    dispatch(fetchData(city)), dispatch(handleFavoriteBox());
+                  }}
+                >
+                  {city}
+                </button>
+                <i
+                  className="fa-solid fa-trash"
+                  onClick={() => dispatch(removeFavorite(city))}
+                ></i>
+              </div>
+            );
+          })
+        ) : (
+          <p>La tua lista preferiti è vuota</p>
+        )}
+      </div>
     </div>
   );
 }
