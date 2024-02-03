@@ -39,6 +39,11 @@ body {
     font-family: var(--bodyFont);
     color: #4682a9;
   }
+  input,
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 ::-webkit-scrollbar {

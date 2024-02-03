@@ -24,7 +24,7 @@
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .btnFC:hover {
     background-color: #4682a9 !important;
     i {
