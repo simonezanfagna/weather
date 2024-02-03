@@ -1,8 +1,14 @@
-# React + Vite
+# Info
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web app allows you to search for the weather of cities around the world and save cities as favourites.
 
-Currently, two official plugins are available:
+I used the free OpenWeatherMap APIs: https://openweathermap.org/api
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The site has no commercial purpose, you can view it at the following link:
+https://sz-weather.netlify.app/
+
+For the project I used React + Vue. So if you want to download it, to use it you have to run the following commands:
+
+npm install
+
+npm run dev
