@@ -11,4 +11,6 @@ For the project I used React + Vue. So if you want to download it, to use it you
 
 npm install
 
+In the weatherSlice.js file, replace API_KEY_OPENWEATHERMAP with your own key that you can create here: https://openweathermap.org/api
+
 npm run dev
