@@ -5,7 +5,7 @@ import {
   getCityFromLocalStorage,
 } from "../utils/localStorage";
 
-const API_KEY_OPENWEATHERMAP = import.meta.env.REACT_APP_API_KEY;
+const API_KEY_OPENWEATHERMAP = import.meta.env.VITE_API_KEY;
 
 const initialState = {
   city: {},
