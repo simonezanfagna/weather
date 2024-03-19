@@ -5,8 +5,6 @@ import {
   getCityFromLocalStorage,
 } from "../utils/localStorage";
 
-const API_KEY_OPENWEATHERMAP = import.meta.env.VITE_API_KEY;
-
 const initialState = {
   city: {},
   isLoading: false,
@@ -22,9 +20,9 @@ const handleRemoveFavorite = (state, { payload }) => {
 };
 
 export const fetchData = createAsyncThunk("weather/getCity", async (c) => {
-  const response = await axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=${c}&units=metric&appid=${API_KEY_OPENWEATHERMAP}&lang=it`
-  );
+  const response = await axios.get("/.netlify/functions/fetchWeather", {
+    params: { c },
+  });
   /* console.log(response.data); */
   return response?.data;
 });
